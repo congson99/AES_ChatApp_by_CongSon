@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AES ChatApp by CongSon</string>
+    <string name="id">ID</string>
+    <string name="password">PassWord</string>
+    <string name="login">LOGIN</string>
+    <string name="nh_p_id_ng_i_b_n_mu_n_chat">Nhập id người bạn muốn chat</string>
+    <string name="start">Start</string>
+    <string name="your_text_here">Your Text here</string>
+    <string name="your_cipher_here">Your Cipher here</string>
+    <string name="nh_p_id_ph_ng_chat_b_n_mu_n_tham_gia">Nhập id phòng chat bạn muốn tham gia</string>
+</resources>

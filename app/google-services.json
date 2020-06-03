@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "298237638601",
+    "firebase_url": "https://aes-chatapp-by-congson.firebaseio.com",
+    "project_id": "aes-chatapp-by-congson",
+    "storage_bucket": "aes-chatapp-by-congson.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298237638601:android:904e860140a67f0aac5a18",
+        "android_client_info": {
+          "package_name": "com.example.aeschatappbycongson"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298237638601-7ogqjonqlctq6d514fnvmh5c09v3vqis.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aeschatappbycongson",
+            "certificate_hash": "d3a15c25344f178b45ad8de3159c0a3d8922f882"
+          }
+        },
+        {
+          "client_id": "298237638601-9s72inu2jd1q8gab3mcm77aqjivlndfn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4Wvu3rGYHL8L71CStDDxH_a71bLQs8oY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298237638601-9s72inu2jd1q8gab3mcm77aqjivlndfn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
