@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AES_ChatApp_by_CongSon.iml" filepath="$PROJECT_DIR$/.idea/modules/AES_ChatApp_by_CongSon.iml" group="AES_ChatApp_by_CongSon" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="AES ChatApp by CongSon/app" />
+    </modules>
+  </component>
+</project>
