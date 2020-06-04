@@ -10,4 +10,16 @@
     <string name="nh_p_id_ph_ng_chat_b_n_mu_n_tham_gia">Nhập id phòng chat bạn muốn tham gia</string>
     <string name="nh_p_id_ph_ng_share_nh">Nhập id phòng share ảnh</string>
     <string name="share_your_photo">Share your photo</string>
+    <string name="ki_m_tra_t_nh_to_n_v_n">Kiểm tra tính toàn vẹn</string>
+    <string name="button">Button</string>
+    <string name="chu_i_l_y_t_database">Chuỗi lấy từ database</string>
+    <string name="textview">TextView</string>
+    <string name="check">Check</string>
+    <string name="nh_p_n_i_dung_ki_m_tra">Nhập nội dung để kiểm tra</string>
+    <string name="n_i_dung_nh_p">Nội dung nhập</string>
+    <string name="n_i_dung_nh_p_c_m_ho">Nội dung nhập được mã hoá</string>
+    <string name="n_i_dung_nh_p_c_b_ng_b_ng_md5">Nội dung nhập được băng bằng MD5</string>
+    <string name="n_i_dung_sau_khi_gi_i_m">Nội dung sau khi giải mã</string>
+    <string name="s">s</string>
+    <string name="n_i_dung_gi_i_m_c_b_ng_b_ng_md5">Nội dung giải mã được băng bằng MD5</string>
 </resources>

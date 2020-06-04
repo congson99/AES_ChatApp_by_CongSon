@@ -26,6 +26,7 @@ public class HomeActivity extends AppCompatActivity {
     Button start;
     Button startRoom;
     Button startShare;
+    Button check;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +40,7 @@ public class HomeActivity extends AppCompatActivity {
         start = (Button) findViewById(R.id.createRoom);
         startRoom = (Button) findViewById(R.id.roomButton);
         startShare = (Button) findViewById(R.id.roomShare);
+        check = (Button) findViewById(R.id.buttonCheck);
 
         final String noidungid = getIntent().getStringExtra("ID");
         final String noidungname = getIntent().getStringExtra("Name");
@@ -133,6 +135,14 @@ public class HomeActivity extends AppCompatActivity {
                     }
                 });
 
+            }
+        });
+
+        check.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, CheckActivity.class);
+                startActivity(intent);
             }
         });
     }
