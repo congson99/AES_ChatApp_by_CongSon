@@ -142,19 +142,6 @@ public class RoomActivity extends AppCompatActivity {
         noidungma.setText("");
     }
 
-    public void vaytayButton (View view){
-        Intent intent = getIntent();
-        final String noidungname = intent.getStringExtra("Name");
-        byte[] encryptionKey = {99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99};
-        Date date = new Date();
-        String tempnhap = String.valueOf(date.getTime()) + noidungma.getText().toString();
-        tempnhap = tempnhap + "aaa";
-        secretKeySpec = new SecretKeySpec(encryptionKey, "AES");
-        databaseReference.child(tempnhap.substring(0,16)).setValue(AESEncryptionMethod(String.valueOf(date.getTime())+ noidungname + " da vay tay!", secretKeySpec));
-        noidungtext.setText("");
-        noidungma.setText("");
-    }
-
     private String AESEncryptionMethod(String string, SecretKeySpec secretKeySpec){
         //[1]
         byte[] stringByte = string.getBytes();

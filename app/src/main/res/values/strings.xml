@@ -8,4 +8,6 @@
     <string name="your_text_here">Your Text here</string>
     <string name="your_cipher_here">Your Cipher here</string>
     <string name="nh_p_id_ph_ng_chat_b_n_mu_n_tham_gia">Nhập id phòng chat bạn muốn tham gia</string>
+    <string name="nh_p_id_ph_ng_share_nh">Nhập id phòng share ảnh</string>
+    <string name="share_your_photo">Share your photo</string>
 </resources>

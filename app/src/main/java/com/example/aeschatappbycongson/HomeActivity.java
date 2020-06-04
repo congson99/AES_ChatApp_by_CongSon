@@ -22,8 +22,10 @@ public class HomeActivity extends AppCompatActivity {
     TextView txtTest;
     EditText key;
     EditText key2;
+    EditText key3;
     Button start;
     Button startRoom;
+    Button startShare;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,8 +35,10 @@ public class HomeActivity extends AppCompatActivity {
         txtTest = (TextView) findViewById(R.id.textView);
         key = (EditText) findViewById(R.id.key);
         key2 = (EditText) findViewById(R.id.key2);
+        key3 = (EditText) findViewById(R.id.key3);
         start = (Button) findViewById(R.id.createRoom);
         startRoom = (Button) findViewById(R.id.roomButton);
+        startShare = (Button) findViewById(R.id.roomShare);
 
         final String noidungid = getIntent().getStringExtra("ID");
         final String noidungname = getIntent().getStringExtra("Name");
@@ -92,6 +96,33 @@ public class HomeActivity extends AppCompatActivity {
                             intent.putExtra("ID", noidungid);
                             intent.putExtra("Name", noidungname);
                             intent.putExtra("Name2", nameroomtemp);
+                            startActivity(intent);
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError databaseError) {
+
+                    }
+                });
+
+            }
+        });
+
+        startShare.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                final String nameroomtemp = key3.getText().toString();
+                final DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("MainData").child("CheckRoomImage");
+                databaseReference.child(nameroomtemp).addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                        String temp2 = dataSnapshot.child(nameroomtemp).getValue().toString();
+                        if(temp2 != null) {
+                            Intent intent = new Intent(HomeActivity.this, ImageActivity.class);
+
+                            intent.putExtra("IDRoom", nameroomtemp);
+                            intent.putExtra("Name", noidungname);
                             startActivity(intent);
                         }
                     }
