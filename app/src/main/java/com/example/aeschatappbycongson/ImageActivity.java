@@ -123,10 +123,10 @@ public class ImageActivity extends AppCompatActivity {
 
         share.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                byte[] hinh = ImageViewToByte(img);
-                String chuoiHinh = Base64.encodeToString(hinh, Base64.DEFAULT);
-
+            public void onClick(View view) {
+                byte[] hinh = ImageViewToByte(img); //[1]
+                String chuoiHinh = Base64.encodeToString(hinh, Base64.DEFAULT);  //[2]
+                //[3]
                 Date date = new Date();
                 String ciphervaluex = String.valueOf(date.getTime()) + String.valueOf(date.getTime());
                 byte[] encryptionKey = {99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99, 99};
@@ -140,8 +140,11 @@ public class ImageActivity extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 secretKeySpec = new SecretKeySpec(encryptionKey, "AES");
+                //[3]
+                //[4]
                 databaseReference.child("Key").setValue(ciphervaluex.substring(0,16));
                 databaseReference.child("Image").setValue(AESEncryptionMethod(chuoiHinh, secretKeySpec));
+                //[4]
                 databaseReference.child("Name").setValue(noidungname);
                 img.setImageDrawable(null);
             }
